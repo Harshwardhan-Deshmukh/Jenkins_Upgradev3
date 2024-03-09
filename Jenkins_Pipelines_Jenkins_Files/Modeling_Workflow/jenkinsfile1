@@ -1,8 +1,8 @@
 pipeline {
     
-    agent any
+    agent any // defines the worker node (slave)
     environment {
-        RELEASE='20.04'
+        RELEASE='20.04' // environment variables you can declare in the environment block.
     }
 
     stages {
@@ -19,8 +19,8 @@ pipeline {
         
         stage('Test') {
             steps {
-                echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}"
+                echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}" // Log Level environment var is defined in above stage
             }
         }
     }
-}
+} 
