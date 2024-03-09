@@ -29,7 +29,12 @@ pipeline {
             steps {
                 echo "Deploying release ${RELEASE} to environment ${TARGET_ENVIRONMENT}"
             }
-        }        
+        }      
+        stage('Clean Up') {
+            steps {
+                echo "Clean Up -> ${RELEASE}..."
+            }
+        }  
     }
     post{
         always {
