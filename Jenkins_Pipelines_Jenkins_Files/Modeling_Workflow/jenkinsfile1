@@ -22,7 +22,7 @@ pipeline {
         
         stage('Test') {
             steps {
-                echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}" // Log Level environment var is defined in above stage
+                echo "Testing. I can see release ${RELEASE}, but not log level ${LOG_LEVEL}" // Log Level environment var is defined in above stage, not a pipeline level environment variable
             }
         }
     }
