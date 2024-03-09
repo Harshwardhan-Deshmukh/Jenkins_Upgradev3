@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        //! Define environment variables here - Parameters
+        //! Define environment variables here - Pipeline Level Scope
         MY_ENV_VAR = 'Custom Value'
     }
 
