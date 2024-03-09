@@ -47,6 +47,7 @@ pipeline {
             }
             steps {
                 echo "Deploying release ${RELEASE} to environment ${TARGET_ENVIRONMENT}"
+                sh '''exit 1'''
             }
         }        
     }
