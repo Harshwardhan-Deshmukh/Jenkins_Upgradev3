@@ -12,7 +12,6 @@ pipeline {
           sh '''
               git version
               java -version
-              // mvn -version
               terraform -version
               az account show
           '''
